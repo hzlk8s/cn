@@ -6,6 +6,9 @@
 
 管理节点由京东云负责部署和维护。部署范围覆盖多个区域，支持同区域下的多个可用区部署集群，管理节点采用高可用的节点冗余机制。Kubernetes集群版本经过京东云充分验证的，安全可靠。
 
+## Serverless服务
+客户无需对集群进行节点维护和容量规划，直接部署应用即可，并根据应用配置的CPU和内存资源量进行按需付费。
+
 ## 工作节点组
 
 工作节点由用户根据业务需要选择类型和初始数量。基于高可用组实现故障域隔离，采用最新的skylake平台云主机，支持通用型、计算优化型、内存优化型。
@@ -20,4 +23,4 @@
 
 ## 通过控制台部署 Kubernetes集群应用  
 
-在 Kubernetes集群中部署Deployment、Pod、Service、ConfigMap等四种常用资源可通过控制台 Dashboard操作，简化用户部署流程。  
+ 在 Kubernetes集群中部署Deployment、StatefulSet、Job、CronJob、DaemonSet、Pod、Service、Ingress、ConfigMap等多种常用资源，用户可通过控制台 Dashboard操作，简化部署流程。
